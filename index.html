@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #2c3e50;
             color: #fff;
             padding: 1em 0;
             text-align: center;
@@ -26,7 +26,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
-            color: #333;
+            color: #27ae60;
         }
         p {
             line-height: 1.6;
@@ -40,8 +40,26 @@
             text-align: center;
             margin-top: 20px;
             padding: 10px;
-            background-color: #333;
+            background-color: #2c3e50;
             color: #fff;
+        }
+        .highlight {
+            color: #27ae60;
+        }
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container ul li {
+            margin: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .container ul li::before {
+            content: '✔';
+            color: #27ae60;
+            position: absolute;
+            left: 0;
         }
     </style>
 </head>
@@ -50,17 +68,17 @@
         <h1>All About Git</h1>
     </header>
     <div class="container">
-        <h2>What is Git?</h2>
+        <h2 class="highlight">What is Git?</h2>
         <p>Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
 
-        <h2>Key Features</h2>
+        <h2 class="highlight">Key Features</h2>
         <ul>
             <li><strong>Distributed:</strong> Each developer has a full copy of the repository, including the entire history.</li>
             <li><strong>Speed:</strong> Git is fast, allowing for quick branching and merging.</li>
             <li><strong>Branching and Merging:</strong> Git has powerful branching and merging capabilities, allowing developers to experiment freely.</li>
         </ul>
 
-        <h2>Basic Commands</h2>
+        <h2 class="highlight">Basic Commands</h2>
         <p>Here are some basic Git commands:</p>
         <ul>
             <li><code>git init</code> - Initialize a new Git repository</li>
@@ -72,7 +90,7 @@
             <li><code>git pull</code> - Pull changes from a remote repository</li>
         </ul>
 
-        <h2>Why Use Git?</h2>
+        <h2 class="highlight">Why Use Git?</h2>
         <p>Git is widely used in the software industry due to its flexibility, speed, and the powerful features it provides for version control. It allows teams to collaborate efficiently, keep track of changes, and maintain a clean project history.</p>
     </div>
     <footer>
